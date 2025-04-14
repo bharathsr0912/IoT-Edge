@@ -1,14 +1,17 @@
 import { useState } from "react";
 // import  { SMTPClient } from "emailjs";
 import React from "react";
+import {contactAPI} from '../services/api'
+
 
 const initialState = {
   name: "",
   email: "",
   message: "",
+  showSpinner: false
 };
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ name, email, message, showSpinner }, setState] = useState(initialState);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,30 +20,23 @@ export const Contact = (props) => {
   const clearState = () => setState({ ...initialState });
   
   const handleSubmit = (e) => {
+    function hideSpinner(){
+      setState((prevState) => ({ ...prevState, showSpinner: false }));
+    }
+    setState((prevState) => ({ ...prevState, showSpinner: true }));
     e.preventDefault();
-    console.log(name, email, message);
-        
-    const client = new SMTPClient({
-      user: 'user',
-      password: 'password',
-      host: 'smtp.your-email.com',
-      ssl: true,
-    });
 
-    // send the message and get a callback with an error or details of the message that was sent
-client.send(
-	{
-		text: 'i hope this works',
-		from: 'you <username@your-email.com>',
-		to: 'someone <someone@your-email.com>, another <another@your-email.com>',
-		cc: 'else <else@your-email.com>',
-		subject: 'testing emailjs',
-	},
-	(err, message) => {
-		console.log(err || message);
-	}
-);
-
+    if(email && name && message){
+      contactAPI({
+        name:name,
+        email:email,
+        message:message
+      }, hideSpinner)
+    }
+    else{
+      alert("Some fields are missed. Please make sure all the fields are present.")
+    }
+      
   };
   return (
     <div>
@@ -101,6 +97,9 @@ client.send(
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
                   Send Message
+                  {showSpinner?<div className="spinner-border" role="status" style={{marginLeft:'10px'}}>
+                    {/* <span className="visually-hidden">Loading...</span> */}
+                  </div>:""}
                 </button>
               </form>
             </div>
