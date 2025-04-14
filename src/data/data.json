@@ -1,10 +1,10 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Innovative Solutions For Smart Tracking",
+    "paragraph": "Transform your fleet management with real-time GPS tracking and cutting-edge mobile applications."
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "At IoT Edge, we are driven by innovation, security, and the power of real-time data. Our mission is to transform the way individuals and businesses connect with their world through smart, reliable, and future-ready IoT solutions.We don’t just deliver technology—we deliver confidence. By harnessing the potential of IoT, we help you stay connected, secure, and one step ahead.",
     "Why": [
       "Lorem ipsum dolor",
       "Tempor incididunt",
@@ -68,18 +68,18 @@
   "Services": [
     {
       "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Fleet Management",
+      "text": "Optimize operations with our advanced tracking solutions."
     },
     {
       "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Personal Security",
+      "text": "Secure your assets with personal safety tools."
     },
     {
       "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Live Tracking",
+      "text": "Manage logistics efficiently with transport management services."
     },
     {
       "icon": "fa fa-language",
