@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -18,7 +19,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            IoT Edge
+            IOT EDGE
           </a>{" "}
         </div>
 
