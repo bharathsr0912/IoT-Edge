@@ -1,8 +1,6 @@
 import { Navigation } from "../components/navigation";
-import { useNavigate } from 'react-router-dom';
 
 export default function FleetManagement() {
-  const navigate = useNavigate(); // Hook from React Router
   return (
     <div>
       <Navigation showLinks={false} />
@@ -10,6 +8,7 @@ export default function FleetManagement() {
       <div className="container">
         <a href="/" className="btn btn-custom mt-3 align-self-start blue-background">← Back to Home</a>
         <h2 className="section-title">Fleet Management</h2>
+        
       {/* Intro Row with Image */}
         <div className="intro-row">
           <div className="intro-text">
@@ -50,7 +49,7 @@ export default function FleetManagement() {
   </div>
 </div>
 
-        {/* Features */}
+        {/* Use Case */}
         <div className="features-with-image">
   
   <div className="features-text">
@@ -71,8 +70,6 @@ export default function FleetManagement() {
     />
   </div>
 </div>
-
-
         {/* Business Impact */}
         <div className="business-impact">
           <h3>Transform Your Fleet Into a Strategic Asset</h3>
