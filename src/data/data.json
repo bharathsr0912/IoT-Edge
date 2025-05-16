@@ -66,17 +66,20 @@
     {
       "src": "/img/Services/Fleet Management.jpg",
       "name": "Fleet Management",
-      "text": "Innovative solutions for efficient fleet tracking and management services."
+      "text": "Innovative solutions for efficient fleet tracking and management services.",
+      "link": "fleet-management"
     },
     {
       "src": "/img/Services/Live Tracking.jpg",
       "name": "Live Tracking",
-      "text": "Real-time location monitoring for enhanced security and operational efficiency."
+      "text": "Real-time location monitoring for enhanced security and operational efficiency.",
+      "link": "liveTracking"
     },
     {
       "src": "/img/Services/Security.jpg",
       "name": "Personal Security",
-      "text": "Advanced GPS tracking systems ensuring safety for individuals and assets."
+      "text": "Advanced GPS tracking systems ensuring safety for individuals and assets.",
+      "link": "personalSecurity"
     }
   ],
   "Testimonials": [

@@ -3,7 +3,6 @@ import { useState } from "react";
 import React from "react";
 import {contactAPI} from '../services/api'
 
-
 const initialState = {
   name: "",
   email: "",
