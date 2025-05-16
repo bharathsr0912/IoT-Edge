@@ -656,7 +656,7 @@ label {
 .intro-image img {
   max-width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(1, 1, 15, 1.35) 1px 2px 14px;
 }
 
 /* Features */
@@ -672,12 +672,14 @@ label {
 
 .features-image {
   flex: 1 1 45%;
+
 }
 
 .features-image img {
   max-width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+  box-shadow: rgba(1, 1, 15, 1.35) 1px 2px 14px;
 }
 
 .features-text {
@@ -742,9 +744,10 @@ label {
 /* Business Impact */
 .business-impact {
   padding: 30px;
-  background-color: #5b8a8b;
+  background-color: #5b718b;
   border-left: 5px solid hsl(211, 76%, 56%);
   border-radius: 8px;
+  box-shadow: rgba(1, 1, 15, 1.35) 1px 2px 14px;
 }
 
 .business-impact h3 {
