@@ -1,4 +1,5 @@
 import HeaderLinks from "./headerLinks";
+import { Link } from 'react-scroll';
 
 export const Navigation = (props) => {
   console.log(props.showLinks);
@@ -18,9 +19,9 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
+          <Link to="page-top" smooth={true} duration={500} className="navbar-brand page-scroll">
             IOT EDGE
-          </a>{" "}
+          </Link>
         </div>
         { props.showLinks ? <HeaderLinks /> : null}
       </div>

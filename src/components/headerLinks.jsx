@@ -1,5 +1,8 @@
-export default function HeaderLinks() { 
-    return(
+import { Link } from 'react-scroll';
+
+export default function HeaderLinks() {
+
+  return(
     <div
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1"
@@ -11,14 +14,14 @@ export default function HeaderLinks() {
               </a>
             </li> */}
             <li>
-              <a href="#about" className="page-scroll">
+              <Link to="about" smooth={true} duration={500} className="page-scroll cursor-pointer">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <Link to="services" smooth={true} duration={500} className="page-scroll cursor-pointer">
                 Services
-              </a>
+              </Link>
             </li>
             {/* <li>
               <a href="#portfolio" className="page-scroll">
@@ -36,9 +39,9 @@ export default function HeaderLinks() {
               </a>
             </li> */}
             <li>
-              <a href="#contact" className="page-scroll">
+              <Link to="contact" smooth={true} duration={500} className="page-scroll cursor-pointer">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

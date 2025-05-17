@@ -1,16 +1,21 @@
 import { Navigation } from "../components/navigation";
+import { Link } from "react-router-dom";
 
 export default function FleetManagement({ data }) {
-  console.log("FleetManagement props:", data);
+    console.log("FleetManagement props:", data);
+  
+  
   if (!data) {
     return <div>Loading Fleet Management data...</div>;
   }
+
   return (
     <div>
       <Navigation showLinks={false} />
       <section id="serviceDetails" className="services-section">
       <div className="container">
-        <a href="/" className="btn btn-custom mt-3 align-self-start blue-background">← Back to Home</a>
+        <Link to="/" state={{ scrollTo: 'services' }} className="btn btn-custom mt-3 align-self-start blue-background">← Back to Home</Link>
+        {/* <a href="/#services" className="btn btn-custom mt-3 align-self-start blue-background">← Back to Home</a> */}
         <h2 className="section-title">{data.title}</h2>
 
       {/* Intro Row with Image */}
