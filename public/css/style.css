@@ -86,6 +86,7 @@ hr {
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
+  cursor: pointer;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
@@ -232,7 +233,7 @@ a:focus,
   font-size: 62px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: -60px;
+  margin-top: -190px;
   margin-bottom: 0;
   
 }
@@ -758,6 +759,10 @@ label {
 .business-impact p {
   font-size: 1.05rem;
   line-height: 1.6;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
