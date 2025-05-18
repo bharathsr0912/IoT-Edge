@@ -41,10 +41,10 @@ const Layout = (props) => {
       <Header data={props.data.Header} />
       <About data={props.data.About} />
       <Services data={props.data.Services} />
+      <Testimonials data={props.data.Testimonials} />
       <Contact data={props.data.Contact} />
       {/* <Features data={landingPageData.Features} /> */}
       {/* <Gallery data={landingPageData.Gallery} /> */}
-      {/* <Testimonials data={landingPageData.Testimonials} /> */}
       {/* <Team data={landingPageData.Team} /> */}
     </div>
   );

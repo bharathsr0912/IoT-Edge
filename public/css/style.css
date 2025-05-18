@@ -764,7 +764,47 @@ label {
 .cursor-pointer {
   cursor: pointer;
 }
+/* Sliding clients*/
+.client-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
 
+.slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  width: calc(250px * 10); /* Adjust based on number of slides */
+}
+
+.slide {
+  width: 250px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.slide img {
+  max-height: 400px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
