@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Services = (props) => {
   return (
@@ -37,9 +38,9 @@ export const Services = (props) => {
                         </h5>
                         <p className="card-text">{d.text}</p>
                       </div>
-                      <a href="#" className="btn btn-custom mt-3 align-self-start">
+                      <Link to={d.to} href="#" className="btn btn-custom mt-3 align-self-start">
                         Learn More
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

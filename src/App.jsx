@@ -8,8 +8,13 @@ import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
+
+import { FleetManagement } from "./components/Pages/fleet_management";
+import { LiveTracking } from "./components/Pages/live_tracking";
+import { PersonalSecurity } from "./components/Pages/personal_security";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -24,17 +29,24 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Contact data={landingPageData.Contact} />
-      {/* <Features data={landingPageData.Features} /> */}
-      {/* <Gallery data={landingPageData.Gallery} /> */}
-      {/* <Testimonials data={landingPageData.Testimonials} /> */}
-      {/* <Team data={landingPageData.Team} /> */}
-    </div>
+    <>
+    <Navigation />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          <div>
+            <Header data={landingPageData.Header} />
+            <About data={landingPageData.About} />
+            <Services data={landingPageData.Services} />
+            <Contact data={landingPageData.Contact} />
+          </div>
+          } />
+        <Route path="/fleet-management" element={<FleetManagement />} exact />
+        <Route path="/personal-security" element={<PersonalSecurity />} exact />
+        <Route path="/live-tracking" element={<LiveTracking />} exact/>
+      </Routes>
+    </BrowserRouter>
+    </>
   );
 };
 
