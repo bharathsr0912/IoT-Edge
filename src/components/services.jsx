@@ -12,12 +12,16 @@ export const Services = (props) => {
             efficient fleet and personal security management.
           </p>
         </div>
+
+        {/* Services Cards */}
         <div className="row">
           {props.data
             ? props.data.map((d, i) => (
                 <div
                   key={`${d.name}-${i}`}
+                  id={`service-${i}`}
                   className="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch mb-4"
+                  style={{ scrollMarginTop: "120px" }}
                 >
                   <div className="card w-100 shadow-sm">
                     <img
@@ -33,14 +37,14 @@ export const Services = (props) => {
                     />
                     <div className="card-body d-flex flex-column justify-content-between">
                       <div>
-                        <h5 className="card-title" style={{ fontSize: "1.25rem", marginTop: "15px" }}>
+                        <h5
+                          className="card-title"
+                          style={{ fontSize: "1.25rem", marginTop: "15px" }}
+                        >
                           {d.name}
                         </h5>
                         <p className="card-text">{d.text}</p>
                       </div>
-                      {/* <a href="#" className="btn btn-custom mt-3 align-self-start">
-                        Learn More
-                      </a> */}
                       <Link
                         to={d.link}
                         className="btn btn-custom mt-3 align-self-start"
@@ -48,7 +52,10 @@ export const Services = (props) => {
                           backgroundColor: "#007bff",
                           color: "#fff",
                           textDecoration: "none",
-                        }}> Learn More </Link>
+                        }}
+                      >
+                        Learn More
+                      </Link>
                     </div>
                   </div>
                 </div>

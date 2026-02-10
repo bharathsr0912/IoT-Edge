@@ -9,6 +9,7 @@ const initialState = {
   message: "",
   showSpinner: false
 };
+
 export const Contact = (props) => {
   const [{ name, email, message, showSpinner }, setState] = useState(initialState);
 
@@ -16,6 +17,7 @@ export const Contact = (props) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
+  
   const clearState = () => setState({ ...initialState });
   
   const handleSubmit = (e) => {
@@ -35,8 +37,8 @@ export const Contact = (props) => {
     else{
       alert("Some fields are missed. Please make sure all the fields are present.")
     }
-      
   };
+
   return (
     <div>
       <div id="contact">
@@ -113,6 +115,27 @@ export const Contact = (props) => {
                 {props.data ? props.data.address : "loading"}
               </p>
             </div>
+
+            {/* Google Map Image Link - ADDED */}
+            <div className="contact-item map-container">
+              <a 
+                href="https://maps.app.goo.gl/hQJ933GTKbFXmwGh6" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="map-link"
+              >
+                <img 
+                  src="/img/map-location.png" 
+                  alt="Our Location on Google Maps" 
+                  className="map-image"
+                />
+                <div className="map-overlay">
+                  <i className="fa fa-map-marker"></i>
+                  <span>View on Google Maps</span>
+                </div>
+              </a>
+            </div>
+
             <div className="contact-item">
               <p>
                 <span>

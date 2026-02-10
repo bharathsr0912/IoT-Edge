@@ -20,7 +20,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <Link to="page-top" smooth={true} duration={500} className="navbar-brand page-scroll">
-            IOT EDGE
+            IMPRIMIS
           </Link>
         </div>
         { props.showLinks ? <HeaderLinks /> : null}

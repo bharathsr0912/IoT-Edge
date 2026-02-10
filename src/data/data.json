@@ -64,21 +64,33 @@
   ],
   "Services": [
     {
-      "src": "/img/Services/Fleet Management.jpg",
+      "src": "/img/Services/Fleet Management.png",
       "name": "Fleet Management",
-      "text": "Innovative solutions for efficient fleet tracking and management services.",
+      "text": "Fleet management solutions enable real-time vehicle tracking, route optimization, fuel monitoring, and driver behavior analysis. These systems improve operational efficiency, reduce costs, and enhance visibility and control across fleet operations.",
       "link": "fleet-management"
     },
     {
-      "src": "/img/Services/Live Tracking.jpg",
-      "name": "Live Tracking",
-      "text": "Real-time location monitoring for enhanced security and operational efficiency.",
+      "src": "/img/Services/Home Automation.png",
+      "name": "Home Automation",
+      "text": "Home automation systems integrate smart control of lighting, appliances, security, and climate management. Centralized and remote access enhances convenience, energy efficiency, and safety in residential and commercial environments.",
       "link": "live-tracking"
     },
     {
-      "src": "/img/Services/Security.jpg",
-      "name": "Personal Security",
-      "text": "Advanced GPS tracking systems ensuring safety for individuals and assets.",
+      "src": "/img/Services/Agriculture Sector.png",
+      "name": "Agriculture Sector",
+      "text": "Technology-driven solutions in the agriculture sector support smart irrigation, soil and weather monitoring, and crop health analysis. Data-driven insights help improve productivity, optimize resource usage, and promote sustainable farming practices.",
+      "link": "personal-security"
+    },
+     {
+      "src": "/img/Services/OEM Integration.png",
+      "name": "OEM Integaration",
+      "text": "Technology-driven solutions in the agriculture sector support smart irrigation, soil and weather monitoring, and crop health analysis. Data-driven insights help improve productivity, optimize resource usage, and promote sustainable farming practices.",
+      "link": "personal-security"
+    },
+    {
+      "src": "/img/Services/Software Solution.png",
+      "name": "Software soluction",
+      "text": "Technology-driven solutions in the agriculture sector support smart irrigation, soil and weather monitoring, and crop health analysis. Data-driven insights help improve productivity, optimize resource usage, and promote sustainable farming practices.",
       "link": "personal-security"
     }
   ],
